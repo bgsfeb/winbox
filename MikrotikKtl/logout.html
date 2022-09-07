@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<title>www.smklabor.sch.id</title>
+		$(if refresh-timeout)
+		<meta http-equiv="refresh" content="$(refresh-timeout-secs)">
+		$(endif)
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	
+		<!-- Favicons -->
+		<link rel="shortcut icon" href="favicon.png">
+		
+		<!-- Font Awesome CSS -->
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+		
+		<!-- Bootstrap core CSS -->
+		<link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Custom styles for this template -->
+		<link href="dist/css/style.css" rel="stylesheet">
+		
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="expires" content="-1">
+		
+		<style>
+			body {
+				background: #eee;
+				color: #E3001B;
+				font-family: 'Roboto', sans-serif;
+			}
+			h4 {
+				color: #E3001B;
+				font-weight:bold;
+			}
+		</style>
+		<script language="JavaScript">
+		<!--
+			function openLogin() {
+			if (window.name != 'hotspot_logout') return true;
+			open('$(link-login)', '_blank', '');
+			window.close();
+			return false;
+			}
+		//-->
+		</script>
+		
+	</head>
+	<body>
+		<table width="100%" height="100%">
+			<tr>
+				<td align="center" valign="middle">
+					<form action="$(link-login)" name="login" onSubmit="return openLogin()">
+						<p><img src="img/dc.png" class="img-responsive">
+						<br/>
+						<button type="submit" id="loading-example-btn" data-loading-text="Loading..." class="btn btn-danger">
+							<i class="fa fa-sign-in fa-fw"></i> login
+						</button>
+					</form>
+					</p>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
